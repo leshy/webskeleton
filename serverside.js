@@ -9,13 +9,20 @@
   settings = {
     module: {
       express4: {
-        port: 4000
+        port: 4000,
+        views: __dirname + '/ejs',
+        'static': __dirname + '/static'
       }
     }
   };
   env.settings = settings;
   ribcage.init(env, function(err, modules){
+    console.log('initialized');
     env.modules = modules;
-    return console.log('ribcage init', err);
+    return env.app.get('/', function(req, res){
+      return res.render('index', {
+        title: 'skeleton'
+      });
+    });
   });
 }).call(this);
