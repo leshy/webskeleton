@@ -1,0 +1,23 @@
+{
+  "name": "webSkeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverside.js",
+  "dependencies": {
+    "backbone4000": "^0.0.1",
+    "bluebird": "^3.0.2",
+    "browserify": "^12.0.1",
+    "colors": "^1.1.2",
+    "ejsify": "^1.0.0",
+    "logger3": "^1.0.0",
+    "ribcage": "^1.0.0",
+    "ribcage_express4": "^1.0.0",
+    "ribcage_logger": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lesh",
+  "license": "ISC"
+}
